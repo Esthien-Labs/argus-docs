@@ -1,0 +1,90 @@
+site_name: Argus SDK Documentation
+site_url: https://docs.esthien.com
+site_description: Safety-supervised inference for physical systems
+site_author: Esthien Labs
+copyright: Copyright 2024-2026 Esthien Labs
+
+repo_name: Esthien-Labs/argus-sdk
+repo_url: https://github.com/Esthien-Labs/argus-sdk
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Esthien-Labs
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/132344254/
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quickstart: getting-started/quickstart.md
+    - Your First Report: getting-started/first-report.md
+  - Guides:
+    - Profiles: guides/profiles.md
+    - Trace Formats: guides/trace-formats.md
+    - Evidence Classes: guides/evidence-classes.md
+    - Custom Profiles: guides/custom-profiles.md
+  - Reference:
+    - CLI Commands: reference/cli.md
+    - Profile Schema: reference/profile-schema.md
+    - Trace Schema: reference/trace-schema.md
+  - About:
+    - Esthien Labs: about/esthien.md
+    - License: about/license.md

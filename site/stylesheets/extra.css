@@ -1,0 +1,33 @@
+:root {
+  --md-primary-fg-color: #0a0a0a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #00d4ff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0a0a0a;
+  --md-primary-bg-color: #0a0a0a;
+  --md-default-bg-color: #0a0a0a;
+  --md-accent-fg-color: #00d4ff;
+}
+
+.md-header {
+  background-color: #0a0a0a;
+}
+
+.md-tabs {
+  background-color: #0a0a0a;
+}
+
+a {
+  color: #00d4ff;
+}
+
+code {
+  background-color: rgba(0, 212, 255, 0.1);
+  border-radius: 4px;
+}
+
+.highlight code {
+  background-color: transparent;
+}
